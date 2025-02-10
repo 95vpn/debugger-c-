@@ -176,6 +176,7 @@ do
 This code instantiates a value and then calls the ChangeValue method
 to update the value. The code then prints the updated value to the console.
 */
+/*
 int x= 5;
 
 x = ChangeValue(x);
@@ -188,3 +189,31 @@ int ChangeValue(int value)
 
     return value;
 }
+*/
+/*
+string[] names = { "Dog", "Cat", "Fish" };
+Object[] objs = (Object[])names;
+
+Object obj = (Object)13;
+objs[2] = obj; 
+*/
+
+/*
+int number1 = 3000;
+int number2 = 0;
+Console.WriteLine(number1 / number2); // DivideByZeroException occurs
+*/
+/*
+int valueEntered;
+string userValue = "two";
+valueEntered = int.Parse(userValue); // FormatException occurs
+*/
+/*
+int[] values1 = { 3, 6, 9, 12, 15, 18, 21 };
+int[] values2 = new int[6];
+
+values2[values1.Length - 1] = values1[values1.Length - 1]; // IndexOutOfRangeException occurs
+*/
+
+object obj = "This is a string";
+int num = (int)obj;
